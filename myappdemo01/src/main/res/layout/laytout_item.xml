@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:id="@+id/item_img1"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nick_name"
+            android:text="奶油小生"
+            android:textSize="24dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/item_img1"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/holo_red_dark"/>
+     <!--   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="现在时间是:2019-5-20 7:50:20"
+            android:textSize="14dp"
+            android:textColor="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"/>-->
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_text"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_orange_dark"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_img2"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"/>
+   <!-- <LinearLayout
+        android:id="@+id/prise_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="right">
+        <ImageView
+            android:id="@+id/prise_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/abc_vector_test"/>
+        <TextView
+            android:id="@+id/prise_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="0"/>
+    </LinearLayout>-->
+</LinearLayout>
