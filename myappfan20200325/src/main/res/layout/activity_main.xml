@@ -18,18 +18,34 @@
         android:id="@+id/x_Banner">
 
     </com.stx.xhb.xbanner.XBanner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens"
+        android:text="热销新品"
+        android:gravity="center"/>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recycler_view">
 
     </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens"
+
+        android:text="魔力时尚"
+        android:gravity="center"/>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recycler_view2">
 
     </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens"
+        android:text="品质生活"
+        android:gravity="center"/>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

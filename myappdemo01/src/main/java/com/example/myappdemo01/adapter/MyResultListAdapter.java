@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.myappdemo01.R;
@@ -46,10 +47,19 @@ public class MyResultListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
         //加载第一种图片
         Glide.with(((ViewHolder)holder).itemImg1.getContext())
+                .applyDefaultRequestOptions(requestOptions)
                 .load(list.get(position).headPic).into(((ViewHolder)holder)
         .itemImg1);
+
+
+        RequestOptions apply1 = new RequestOptions().placeholder(R.drawable.abw)
+                .fallback(R.drawable.abu)
+                .error(R.mipmap.ic_launcher)
+                .apply(RequestOptions.bitmapTransform(new CircleCrop()));
+
         //加载第二种图片
         Glide.with(((ViewHolder)holder).itemImg2.getContext())
+                .applyDefaultRequestOptions(apply1)
                 .load(list.get(position).image).into(((ViewHolder)holder).itemImg2);
 
         ((ViewHolder)holder).nickName.setText(list.get(position).nickName);
